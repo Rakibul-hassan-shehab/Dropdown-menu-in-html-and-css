@@ -1,0 +1,86 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	
+} 
+.first-menu{
+	display: flex;
+	justify-content: space-around;
+	background-color: black;
+	padding: 10px;
+	align-self: center;
+	height: 50px;
+	
+}
+.first-menu li a:hover{
+	color: red;
+}
+.first-menu li{
+	position: relative;
+	width: 200px;
+	height: 100%;
+}
+.first-menu >li >ul > li{
+	padding: 10px;
+	margin: 2px;
+}
+.first-menu >li >ul > li >ul >li{
+	padding: 10px;
+	margin: 2px;
+}
+.first-menu >li >ul > li >ul >li >ul> li {
+	padding: 10px;
+	margin: 2px;
+}
+
+.second-menu{
+ position: absolute;
+ display: none;
+ background-color: #000000;
+}
+.first-menu li:hover .second-menu{
+	display: block;
+}
+.first-menu li .second-menu li{
+	position: relative;
+	
+}
+.first-menu li .second-menu li ul{
+	background-color: black;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 200px;
+}
+.second-menu ul{
+	display: none;
+}
+.second-menu li:hover ul {
+	display: block;
+}
+.second-menu li .servis-menu li {
+	background-color: rgb(17, 0, 255);
+	position: relative;
+}
+.second-menu li .servis-menu li > ul{
+	background-color: aqua;
+}
+.second-menu li .servis-menu li ul{
+	position: absolute;
+	top: 0;
+	
+	display: none;
+}
+.second-menu li .servis-menu li ul li a{
+	display: inline-block;
+	width: 100%;
+}
+.second-menu li .servis-menu li:hover ul{
+	display: block;
+}
